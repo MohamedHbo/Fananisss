@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاذكار المسائيه</title>
 
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="azkar.css">
+     <link rel="apple-touch-icon" href="img/h.jpg">
+
+    <link rel="icon" type="image/png" href="img/icon1.png"/>
+</head>
+<body data-spy="scroll" data-target="#menu-list" > 
+   
+    
+   
+    
+<!-- header section starts  -->
+ <header>
+        <nav>
+            <div class="logo">
+                <a href="#">الاذكار المسائيه</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="../ramadan.html" class="active">الرئيسه</a></li>
+                <li><a href="../about/about.html">من نحن</a></li>
+                <li><a href="../compotion/test.html">الاختبار</a></li>
+                <li><a href="../compotion/play.html">مسابقه رمضان</a></li>
+                <li><a href="../contact/contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="home" id="home">
+
+    <h1>Ramadan Kareem</h1>
+    
+   <b class="btn"> 🌙 الاذكار المسائيه  
+</b>
+
+    <div class="shape"></div>
+
+</section>
+
+    
+     <!-- ... (الجزء الآخر من الصفحة) ... -->
+
+
+<div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">
+بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم
+قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَد</span>
+            <span class="counter" id="counter2" style="margin-left: 900px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter2')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+
+<!-- ... (الجزء الآخر من الصفحة) ... -->
+<div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم
+قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</span>
+            <span class="counter" id="counter3" style="margin-left: 446px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter3')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+
+    
+    <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم
+قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ</span>
+            <span class="counter" id="counter4" style="margin-left: 372px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter4')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    
+    <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 25px;">اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا عَبْـدُك ، وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما صَنَـعْت ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ لا يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ</span>
+            <span class="counter" id="counter5" style="margin-left: 150px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter5')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً</span>
+            <span class="counter" id="counter6" style="margin-left: 1085px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter6')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+<div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللّهُـمَّ إِنِّـي أَصْبَـحْتُ أُشْـهِدُك ، وَأُشْـهِدُ حَمَلَـةَ عَـرْشِـك ، وَمَلَائِكَتَكَ ، وَجَمـيعَ خَلْـقِك ، أَنَّـكَ أَنْـتَ اللهُ لا إلهَ إلاّ أَنْـتَ وَحْـدَكَ لا شَريكَ لَـك ، وَأَنَّ ُ مُحَمّـداً عَبْـدُكَ وَرَسـولُـك</span>
+            <span class="counter" id="counter7" style="margin-left: 200px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter7')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+
+    
+    
+    <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللّهُـمَّ ما أَصْبَـَحَ بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر</span>
+            <span class="counter" id="counter8" style="margin-left: 740px;" >0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter8')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+
+    <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">حَسْبِـيَ اللّهُ لا إلهَ إلاّ هُوَ عَلَـيهِ تَوَكَّـلتُ وَهُوَ رَبُّ العَرْشِ العَظـيم</span>
+            <span class="counter" id="counter9" style="margin-left: 1123px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter9')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+     <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه</span>
+            <span class="counter" id="counter10" style="margin-left: 960px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter10')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+       <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللّهُـمَّ بِكَ أَمْسَـينا وَبِكَ أَصْـبَحْنا، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ الْمَصِيرُ</span>
+            <span class="counter" id="counter11" style="margin-left: 1050px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter11')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+         <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">يَا رَبِّ , لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ , وَلِعَظِيمِ سُلْطَانِكَ</span>
+            <span class="counter" id="counter12" style="margin-left: 1129px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter12')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+          <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">أَمْسَيْنَا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ</span>
+            <span class="counter" id="counter13" style="margin-left: 305px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter13')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    
+         <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ</span>
+            <span class="counter" id="counter14" style="margin-left: 840px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter14')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+     <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ</span>
+            <span class="counter" id="counter15" style="margin-left: 905px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter15')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    
+       <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">أَمْسَيْنا وَأَمْسَى الْمُلْكُ للهِ رَبِّ الْعَالَمَيْنِ، اللَّهُمَّ إِنَّي أسْأَلُكَ خَيْرَ هَذَه اللَّيْلَةِ فَتْحَهَا ونَصْرَهَا، ونُوْرَهَا وبَرَكَتهَا، وَهُدَاهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فيهِا وَشَرَّ مَا بَعْدَهَا</span>
+            <span class="counter" id="counter16" style="margin-left: 299px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter16')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+         <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">عـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق</span>
+            <span class="counter" id="counter17" style="margin-left: 1270px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter17')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    
+    
+         <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد</span>
+            <span class="counter" id="counter18" style="margin-left: 1310px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter18')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+          <div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءِ قَدِيرِ</span>
+            <span class="counter" id="counter19" style="margin-left: 1000px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter19')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+<div class="azkar-container">
+    <div class="azkar">
+        <div class="azkar-item">
+            <span class="azkar-text" style="font-size: 30px;">سُبْحـانَ اللهِ وَبِحَمْـدِهِ</span>
+            <span class="counter" id="counter20" style="margin-left: 1480px;">0</span>
+            <button class="increment-btn" onclick="incrementCounter('counter20')">+</button>
+        </div>
+        <!-- Add more azkar items as needed -->
+    </div>
+</div>
+    
+    
+    
+    
+    
+<div class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <a href="https://earth.google.com/web/@-13.66662761,-87.67585388,-9617.72044893a,13552843.14657927d,35y,360h,0t,0r"><h3>branch locations</h3></a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WouvrIFG1Z_aTy_zDf1HcMrI1sQ&ll=26.28049405082319%2C28.77638384141772&z=8">EGYPT</a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WouvrIFG1Z_aTy_zDf1HcMrI1sQ&ll=37.76095823636627%2C-107.2694241266123&z=6">USA</a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WouvrIFG1Z_aTy_zDf1HcMrI1sQ&ll=45.39291843795305%2C-0.04876781101180505&z=7">france</a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WouvrIFG1Z_aTy_zDf1HcMrI1sQ&ll=51.528868434293244%2C-0.10159864999999435&z=11">London</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="../ramadan.html">الرئيسية</a>
+            <a href="#">من نحن</a>
+            <a href="../compotion/test.html">الاختبار</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i>  Cairo, London 400104. </p>
+            <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
+            <p> <i class="fas fa-phone"></i> +201050302032 </p>
+        </div>
+
+    </div>
+</div>
+    
+    
+    
+    
+<!-- custom js file link  -->
+<script src="azkar.js"></script>
+
+   
+</body>
+</html>
