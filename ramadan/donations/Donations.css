@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+   background: #ebf0fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  margin-top: 180px;
+  padding: 20px;
+  background-image: url('1.jpg');
+  background-size: cover; /* تأكد من تغطية الصورة لكامل عرض وارتفاع العنصر */
+  background-repeat: no-repeat; /* تجنب تكرار الصورة */
+  background-position: center; /* تحديد موضع الصورة داخل العنصر */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+h1 {
+  color: #333;
+  font-size: 2.5rem; /* زيادة حجم الخط إلى 2.5rem */
+}
+p {
+  color: #666;
+  font-size: 1.2rem; /* زيادة حجم الخط إلى 1.2rem */
+  font-weight: bold; /* تطبيق نص بخط عريض */
+}
+
+
+
+.charity-list {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background:linear-gradient(#ebaa7e -30%,#4949d0 100%);
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.header .logo span {
+  color: #f00;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: #f00;
+}
+
+
+
+
+footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f3f3f3;
+      padding: 10px;
+      text-align: center;
+    }
