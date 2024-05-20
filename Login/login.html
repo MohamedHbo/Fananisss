@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="login.css">
+
+   <title>Log In</title>
+   <link rel="icon" type="image/png" href="icon1.png"/>
+
+</head>
+<body>
+   <div class="login">
+      <img src="login.png" alt="login image" class="login__img">
+
+      <form  class="login__form">
+         <h1 class="login__title">Log In</h1>
+
+         <div class="login__content">
+            <div class="login__box">
+               <i class="ri-user-3-line login__icon"></i>
+
+               <div class="login__box-input">
+                  <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                  <label for="login-email" class="login__label">Email</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+               <i class="ri-lock-2-line login__icon"></i>
+
+               <div class="login__box-input">
+                  <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                  <label for="login-pass" class="login__label">Password</label>
+                  <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+               </div>
+            </div>
+         </div>
+
+         <div class="login__check">
+            <div class="login__check-group">
+               <input type="checkbox" class="login__check-input" id="login-check">
+               <label for="login-check" class="login__check-label">Remember me</label>
+            </div>
+
+            <a href="forgetpassword.html" class="login__forgot">Forgot Password?</a>
+         </div>
+
+         <button type="submit" class="login__button">Login</button>
+
+         <p class="login__register">
+            Don't have an account? <a href="../login/rigister.php">Register</a>
+         </p>
+      </form>
+   </div>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="main.js"></script>
+
+   <script>
+      document.querySelector('.login__form').addEventListener('submit', function (event) {
+         // Prevent the default form submission behavior
+         event.preventDefault();
+
+         // Extract the values of email and password
+         var emailValue = document.getElementById('login-email').value;
+         var passwordValue = document.getElementById('login-pass').value;
+
+         // You can add more validation here as needed
+
+         // Example: Check if the entered credentials match a predefined user
+         var validUsers = [
+            { email: 'example1@example.com', password: 'password1' },
+            { email: 'example2@example.com', password: 'password2' },
+            // Add more users as needed
+         ];
+
+         var isValidUser = validUsers.some(function (user) {
+            return user.email === emailValue && user.password === passwordValue;
+         });
+
+         if (isValidUser) {
+            // If the user is valid, redirect them to the "ramadan.html" page
+            window.location.href = '../ramadan/ramadan.html';
+         } else {
+            // If the user is not valid, display an error message
+            alert('You have not registered before. Please register first.');
+         }
+      });
+   </script>
+</body>
+</html>
