@@ -1,0 +1,112 @@
+body {
+  background-image: url('img/face.png'); /* Replace with your background image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* Additional styles for the body */
+}
+
+.btn {
+  background-color: #a4605b;
+  color: white;
+    width: 200px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold; /* Adding bold font weight */
+    margin-bottom: -15px;
+    font-size: 30px;
+  /* Additional styles for the button */
+}
+
+.btn:hover {
+  color: #ffd700; /* تغيير لون النص عند تحريك المؤشر فوق الزر */
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.0rem 7%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header .logo{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2.5rem;
+    color: #FFD700;
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a 3D effect with text-shadow */
+}
+
+
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:#444;
+}
+
+header #login{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+}
+
+header #login:hover{
+    color:#444;
+}
+
+header #menu{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+ .side-images {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 600px; /* Adjust as needed */
+      margin: 0 auto;
+      padding-top: 20px; /* Adjust the spacing between the button and images */
+    }
+
+
+
+    .left-image,
+    .right-image {
+      width: 170px; /* Set the width of your images */
+      height: 190px;
+        /* Maintain aspect ratio */
+    }
+
+
+ 

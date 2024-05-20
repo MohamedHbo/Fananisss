@@ -1,0 +1,140 @@
+/* coding with nick */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(90deg, #d5d9dd,#000066 160%);;
+  
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.quiz-container {
+  background-image: linear-gradient(90deg, #0a497f	,#d279a6 170%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+  margin: auto; /* تموضع في منتصف الصفحة */
+  margin-top: 150px; /* قم بتعديل المسافة من الأعلى حسب الحاجة */
+}
+
+
+
+.quiz-header{
+  padding: 4rem;
+}
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label{
+  cursor: pointer;
+}
+button{
+  background-color: #4949d0
+;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+button:hover{
+  background-image: linear-gradient(90deg, #a4605b,#4949d0 115%);
+}
+button:focus{
+  outline: none;
+  background-color: #44b927;
+}
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.0rem 7%;
+    background:linear-gradient(90deg, #4949d0,#a4605b 115%);;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header .logo{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #FFD700;
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a 3D effect with text-shadow */
+     text-decoration: none; /* Remove underline */
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:#444;
+}
+
+header #login{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+}
+
+header #login:hover{
+    color:#444;
+}
+
+header #menu{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* في ملف home.css أو أي ملف آخر لديك */
+.bottom-images {
+  text-align: center; /* لوسط الصور داخل الـ div */
+  margin-top: 30px; /* مسافة من الأعلى */
+}
+
+.bottom-images img {
+  margin: 0 50px; /* مسافة بين الصور */
+}
